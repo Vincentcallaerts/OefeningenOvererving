@@ -102,5 +102,23 @@ namespace OefeningBank
             }
             return temp;
         }
+        public void SortList() 
+        {
+
+            List<Rekening> temp = new List<Rekening>();
+
+            for (int i = 0; i < Klanten.Count; i++)
+            {
+                if (Klanten[i].Type == "SpaarRekening")
+                {
+                    temp.Add(Klanten[i]);
+                    Klanten.RemoveAt(i);
+                }
+            }
+            for (int i = 0; i < temp.Count; i++)
+            {
+                Klanten.Add(temp[i]);
+            }
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace OefeningBank
                         kbc.OverzichtRekeningen();                     
                         break;
                     case 1:
-                        
+                        kbc.SortList();
                         index = SelectMenu("Selecteer een rekening voor van over te schrijven", kbc.ZonderSpaarRekening());
                         Console.Write("Hoeveel wilt u overschrijven: ");
                         bedragOverschrijving = Convert.ToDouble(Console.ReadLine());
