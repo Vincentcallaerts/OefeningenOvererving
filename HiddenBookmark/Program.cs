@@ -24,7 +24,7 @@ namespace HiddenBookmark
             topFive[2] = facebook;
             topFive[3] = reddit;
             topFive[4] = github;
-
+            Console.WriteLine(topFive[4].ToString());
             while (running)
             {
 
