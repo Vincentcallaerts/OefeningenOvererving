@@ -24,7 +24,10 @@ namespace HiddenBookmark
             Process.Start(@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", Url);
         }
 
-
+        public override string ToString()
+        {
+            return $"{Naam} ({Url})";
+        }
     }
 }
 

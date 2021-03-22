@@ -14,5 +14,9 @@ namespace HiddenBookmark
         {
             Process.Start(@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe","-incognito " + Url);
         }
+        public override string ToString()
+        {
+            return base.ToString() + "---HIDDEN---";
+        }
     }
 }
